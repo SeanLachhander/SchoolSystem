@@ -74,7 +74,7 @@ public class LoginController implements Initializable {
         try{
             Stage userstage = new Stage();
             FXMLLoader loader = new FXMLLoader();
-            Pane root = (Pane)loader.load(getClass().getResource("/students/studentFXML.fxml").openStream());
+            Pane root = (Pane)loader.load(getClass().getResource("../students/studentFXML.fxml").openStream());
 
 
             StudentsController studentsController = (StudentsController)loader.getController();
@@ -95,7 +95,7 @@ public class LoginController implements Initializable {
         try{
             Stage adminStage = new Stage();
             FXMLLoader adminLoader = new FXMLLoader();
-            Pane adminroot = (Pane)adminLoader.load(getClass().getResource("/Admin/Admin.fxml").openStream());
+            Pane adminroot = (Pane)adminLoader.load(getClass().getResource("../Admin/Admin.fxml").openStream());
             AdminController adminController = (AdminController)adminLoader.getController();
 
             Scene scene = new Scene(adminroot);
