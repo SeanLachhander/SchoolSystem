@@ -52,7 +52,7 @@ public class LoginController implements Initializable {
             if(this.loginModel.isLogin(this.username.getText(), this.password.getText(), ((option)this.combobox.getValue()).toString())){
                 Stage stage = (Stage)this.loginButton.getScene().getWindow();
                 stage.close();
-                switch(((option)this.combox.getValue()).toString()){
+                switch(((option)this.combobox.getValue()).toString()){
                     case "Admin":
                         adminLogin();
                         break;
